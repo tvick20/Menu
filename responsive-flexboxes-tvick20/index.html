@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Odd looking animals and some fun facts about them!">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <title>Odd Animals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Source+Sans+Pro:wght@200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="hero">
+    <picture>
+      <source media="(min-width: 801px)" srcset="images/hero-deer-2000px.jpg">
+      <source media="(min-width: 401px)" srcset="images/hero-deer-800px.jpg">
+      <source media="(max-width: 400px)" srcset="images/hero-deer-400px.jpg">
+      <img src="images/hero-deer-800px.jpg" alt="saiga antelope grazing">
+    </picture>
+    <div class="hero-text">
+      <h1>Odd Looking Animals</h1>
+      <p>Absolutely necessary information</p>
+    </div>
+  </div>
+  <header>
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+        <li><a href="#">Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="panel">
+
+      <div class="text-wrapper left">
+        <h2>The Shoebill Stork</h2>
+        <p>The shoebill, also known as the whalebill, whale-headed stork, or shoe-billed stork, is a very large
+          long-legged wading bird. It derives its name from its enormous shoe-shaped bill.
+        </p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="images/shoebill-stork.jpg" alt="The Shoebill Stork in it's natural habitat" width="600" height="450">
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="text-wrapper">
+        <h2>Where does it live?</h2>
+        <p>The shoebill is found in the marshes of Western Africa. Habitat destruction is a major contributing factor to
+          the decline of the species.
+        </p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+      <div class="image-wrapper left">
+        <img src="images/swamp.jpg" alt="The Shoebill Stork's natural habitat" width="600" height="400">
+      </div>
+    </article>
+  </main>
+
+  <section class="cards">
+    <a href="#" class="card">
+      <img src="images/echidna_photo.jpg" alt="A very fun echidna" width="500" height="500">
+      <p>Very Cool Echidna</p>
+    </a>
+    <a href="#" class="card">
+      <img src="images/blobfish_photo.jpg" alt="A Blobfish doing his thing" width="500" height="500">
+      <p>Blobfish Bubbles</p>
+    </a>
+    <a href="#" class="card">
+      <img src="images/zebrathing_photo.jpg" alt="What is this" width="500" height="500">
+      <p>What even is this?</p>
+    </a>
+    <a href="#" class="card">
+      <img src="images/deer_photo.jpg" alt="A deer looking up" width="500" height="500">
+      <p>Bambi?</p>
+    </a>
+  </section>
+
+  <aside>
+    <h2>More Fascinating Shoebill information</h2>
+    <p>The shoebill is normally silent, but they perform bill-clattering displays at the nest.
+      When engaging in these displays, adult birds have also been noted to utter a cow-like moo as well as
+      high-pitched whines.
+      Both nestlings and adults engage in bill-clattering during the nesting season as a means of communication.
+      When young are begging for food, they call out with a sound uncannily like human hiccups.
+    </p>
+  </aside>
+  <footer>
+    <p>The information on this website is courtesy of wikipedia</p>
+  </footer>
+  <script>
+    const header = document.querySelector("header");
+
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+      header.classList.toggle("close");
+    });
+  </script>
+</body>
+
+</html>
